@@ -2,7 +2,7 @@ import en from './en.json';
 type Dict = Record<string, string>;
 const locales: Record<string, Dict> = { en };
 let current = 'en';
-export function registerLocale(code: string, dict: Dict): void { locales[code] = { ...(locales[code] ?? {}), ...dict }; }
+export function registerLocale(code: string, dict: Dict): void { locales[code] = { ...locales[code], ...dict }; }
 export function setLocale(code: string): void { if (locales[code]) current = code; }
 export function getLocale(): string { return current; }
 export function availableLocales(): string[] { return Object.keys(locales); }

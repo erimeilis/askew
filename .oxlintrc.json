@@ -1,0 +1,6 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": { "correctness": "error", "suspicious": "warn" },
+  "rules": { "no-restricted-imports": ["error", { "patterns": ["../*", "../../*"] }] },
+  "ignorePatterns": ["dist", "coverage", "node_modules", "playwright-report", "test-results"]
+}
