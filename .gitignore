@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+.vite/
+*.local
+.DS_Store
+.idea/
+.vscode/
+test-results/
+playwright-report/
+plans/*.plan.json
+!plans/.gitkeep
