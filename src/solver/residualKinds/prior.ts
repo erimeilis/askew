@@ -3,7 +3,14 @@ import { floorRooms } from "@/model/queries";
 import { signedAngleDeg, wrapDeg } from "@/geometry/angle";
 import type { Id } from "@/model/types";
 
-const cornerKey = (a: Id, b: Id, c: Id): string => `${b}|${a < c ? `${a}~${c}` : `${c}~${a}`}`;
+/**
+ * Identifies a corner by its vertex plus its unordered neighbour pair.
+ *
+ * JSON rather than separator-joined concatenation: ids are validated only as
+ * non-empty strings, so a plan loaded from a file may legally contain any
+ * character, and a joined key would let two different corners collide.
+ */
+const cornerKey = (a: Id, b: Id, c: Id): string => JSON.stringify([b, a < c ? [a, c] : [c, a]]);
 
 /** Weak prior: every room corner without a typed angle pulls toward the nearest multiple of cfg.priorStepDeg. */
 export const priorResiduals: ResidualBuilder = (plan, floorId, vars, cfg) => {
