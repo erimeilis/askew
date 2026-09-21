@@ -1,4 +1,3 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { App } from '@/editor/App';
-createRoot(document.getElementById('root')!).render(<StrictMode><App /></StrictMode>);
+import { mount } from "@/editor/mount";
+import { EDITOR_CONFIG } from "@/config/editor";
+mount(EDITOR_CONFIG.rootElementId);

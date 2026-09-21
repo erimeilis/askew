@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "description": "A floor-plan editor for rooms that are not quite rectangles.",
-  "type": "module",
+  "keywords": [],
+  "homepage": "https://github.com/erimeilis/askew#readme",
+  "bugs": {
+    "url": "https://github.com/erimeilis/askew/issues"
+  },
   "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erimeilis/askew.git"
+  },
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -13,18 +23,10 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "lint": "oxlint",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/erimeilis/askew.git"
-  },
-  "keywords": [],
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/erimeilis/askew/issues"
-  },
-  "homepage": "https://github.com/erimeilis/askew#readme",
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
     "idb-keyval": "^6.3.0",
@@ -43,6 +45,7 @@
     "@vitest/coverage-v8": "^5.0.1",
     "fake-indexeddb": "^6.2.5",
     "jsdom": "^30.1.0",
+    "oxfmt": "^0.68.0",
     "oxlint": "^1.83.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.0",

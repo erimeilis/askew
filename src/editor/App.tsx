@@ -1,2 +1,4 @@
-import { t } from '@/i18n';
-export function App() { return <h1>{t('app.title')}</h1>; }
+import { t } from "@/i18n";
+export function App() {
+  return <h1>{t("app.title")}</h1>;
+}
