@@ -1,5 +1,6 @@
 import type { Plan, Floor, Id } from "./types";
 import { t } from "@/i18n";
+import { CURRENT_VERSION } from "./migrations";
 let counter = 0;
 export function createId(prefix: string): Id {
   counter++;
@@ -10,7 +11,7 @@ export function newFloor(index: number): Floor {
 }
 export function emptyPlan(name: string): Plan {
   return {
-    version: 1,
+    version: CURRENT_VERSION,
     name,
     floors: [newFloor(1)],
     points: [],
