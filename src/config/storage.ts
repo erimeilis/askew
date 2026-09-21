@@ -1,0 +1,1 @@
+export const STORAGE_CONFIG = { db: { name: 'askew', store: 'kv' }, autosaveKey: 'autosave', localeKey: 'locale', fileHandleKey: 'fileHandle', fileExtension: '.plan.json', autosaveDebounceMs: 300, plansDir: 'plans' } as const;

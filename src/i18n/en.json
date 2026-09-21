@@ -1,0 +1,18 @@
+{
+  "app.title": "Plan editor",
+  "tool.select": "Select", "tool.room": "Room", "tool.measure": "Measure", "tool.thickness": "Wall thickness",
+  "tool.angle": "Angle", "tool.align": "Align", "tool.opening": "Opening", "tool.fixture": "Fixture",
+  "measure.prompt.length": "Length {a} → {b} (mm)", "measure.prompt.thickness": "Wall thickness (mm)",
+  "measure.prompt.angle": "Angle at {b} (°)", "align.prompt.axis": "Align axis: x or y",
+  "room.prompt.name": "Room name",
+  "panel.measurements": "Measurements", "panel.value": "Value", "panel.residual": "Residual", "panel.kind": "Kind",
+  "panel.properties": "Properties", "panel.unconstrained": "Needs a measurement: {count} point(s)",
+  "solve.notConverged": "Solver did not converge; coordinates kept from last good solve",
+  "solve.rms": "RMS {value}",
+  "file.save": "Save", "file.open": "Open", "file.new": "New", "file.export.svg": "Export SVG", "file.export.dxf": "Export DXF", "file.print": "Print",
+  "floor.add": "Add floor", "floor.default": "Floor {n}",
+  "opening.door": "Door", "opening.window": "Window", "opening.prompt.offset": "Offset from wall start (mm)", "opening.prompt.width": "Width (mm)",
+  "fixture.prompt.name": "Fixture name", "fixture.prompt.offset": "Offset along wall (mm)", "fixture.prompt.depth": "Distance from wall (mm)", "fixture.prompt.w": "Width (mm)", "fixture.prompt.d": "Depth (mm)",
+  "edit.undo": "Undo", "edit.redo": "Redo", "edit.delete": "Delete",
+  "print.scale": "Scale 1:{scale}"
+}
