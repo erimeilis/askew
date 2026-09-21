@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [
+    "docs",
+    "dist",
+    "coverage",
+    "node_modules",
+    "playwright-report",
+    "test-results",
+    "plans"
+  ]
+}
