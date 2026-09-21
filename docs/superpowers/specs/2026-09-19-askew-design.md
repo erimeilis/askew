@@ -146,4 +146,6 @@ Image underlay tracing, 3D, curved walls, roof/attic slopes, electrical symbols 
 - **Logic separate from UI**: `model`, `solver`, `geometry`, `export`, `persistence` are pure TypeScript with no React or DOM imports. React components only render state and dispatch store actions. Tools are plain objects in `src/editor/tools/`, one file each.
 - **Small files**: one responsibility per file, target under 150 lines. Shared helpers extracted instead of copied.
 - **Imports**: path alias `@/` for src and `@tests/` for tests; `./` only for same-folder siblings; `../` is forbidden and lint-checked.
-- **Dependencies**: always the latest stable major at install time, verified with `npm view <pkg> version` (2026-09-21: React 19.3, zod 4.6, zustand 5.0, Vite 8.3, TypeScript 7.0, Vitest 5.0, idb-keyval 6.3).
+- **Dependencies**: always the latest stable major at install time, verified with `npm view <pkg> version` (2026-09-21: React 19.3, zod 4.6, zustand 5.0, Vite 8.3, TypeScript 7.0, Vitest 5.0, idb-keyval 6.3, Phosphor 2.1.10).
+- **Toolchain**: oxlint for linting and oxfmt for formatting, not ESLint and not Prettier. `typescript-eslint` declares `typescript: ">=4.8.4 <6.1.0"`, so keeping ESLint would have meant holding TypeScript a major behind; the linter changed instead. oxfmt is scoped to source, because by default it reformats the markdown in `docs/`.
+- **Quality gates**: every task ends with five green — `npm test`, `npm run typecheck`, `npm run lint`, `npm run format:check`, `npm run build`.
