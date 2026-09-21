@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "categories": { "correctness": "error", "suspicious": "warn" },
-  "rules": { "no-restricted-imports": ["error", { "patterns": ["../**"] }] },
+  "rules": {
+    "no-restricted-imports": ["error", { "patterns": ["../**"] }],
+    "no-underscore-dangle": ["warn", { "allow": ["_schemaSatisfiesPlan", "_planSatisfiesSchema"] }]
+  },
   "ignorePatterns": ["dist", "coverage", "node_modules", "playwright-report", "test-results"]
 }
