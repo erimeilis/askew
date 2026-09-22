@@ -11,12 +11,16 @@ import {
   FilePlusIcon,
   FloppyDiskIcon,
   FolderOpenIcon,
+  LifebuoyIcon,
+  MonitorIcon,
+  MoonIcon,
   type Icon,
   PlusIcon,
   PolygonIcon,
   PrinterIcon,
   RulerIcon,
   StairsIcon,
+  SunIcon,
   TrashIcon,
   WarningIcon,
 } from "@phosphor-icons/react";
@@ -49,6 +53,8 @@ export const ICONS = {
   },
   floor: { add: PlusIcon, tab: StairsIcon },
   status: { warning: WarningIcon },
+  coach: { help: LifebuoyIcon },
+  theme: { system: MonitorIcon, light: SunIcon, dark: MoonIcon },
 } satisfies Record<string, Record<string, Icon>>;
 
 export const ICON_SIZE = { rail: 22, button: 18, inline: 14 } as const;

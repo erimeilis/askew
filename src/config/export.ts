@@ -14,6 +14,7 @@ export const EXPORT_CONFIG = {
     labels: "#000",
     flagged: "#d22",
     selected: "#f80",
+    background: "#fff",
   },
   printScales: [50, 100] as const,
   dimensionOffsetMm: 300,

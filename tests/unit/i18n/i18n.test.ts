@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { t, setLocale, registerLocale, availableLocales } from "@/i18n";
 describe("i18n", () => {
   it("returns english string with params", () => {
-    expect(t("measure.prompt.length", { a: "P1", b: "P2" })).toBe("Length P1 → P2 (mm)");
+    expect(t("measure.prompt.length", { label: "P1 → P2" })).toBe("Length P1 → P2 (mm)");
   });
   it("falls back to key when missing", () => {
     expect(t("nope.missing")).toBe("nope.missing");

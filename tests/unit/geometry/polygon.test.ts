@@ -9,7 +9,7 @@ const sq = [
 describe("polygon", () => {
   it("area is positive regardless of winding", () => {
     expect(polygonArea(sq)).toBe(12_000_000);
-    expect(polygonArea([...sq].reverse())).toBe(12_000_000);
+    expect(polygonArea(sq.toReversed())).toBe(12_000_000);
   });
   it("centroid of rectangle", () => {
     expect(polygonCentroid(sq)).toEqual({ x: 2000, y: 1500 });

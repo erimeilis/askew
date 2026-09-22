@@ -3,6 +3,10 @@ export const STORAGE_CONFIG = {
   autosaveKey: "autosave",
   localeKey: "locale",
   fileHandleKey: "fileHandle",
+  /** Whether the getting-started coach was dismissed (Skip/Finish) on this browser. */
+  coachSkippedKey: "coachSkipped",
+  /** The manual theme choice ("system" | "light" | "dark"), remembered across reloads. */
+  themeKey: "theme",
   fileExtension: ".plan.json",
   autosaveDebounceMs: 300,
   plansDir: "plans",
