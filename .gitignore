@@ -14,4 +14,7 @@ plans/*.plan.json
 # Scratch workspace for the task runner: ledger, briefs, review packages.
 /.superpowers/
 # docs/superpowers/ is deliberately NOT ignored — the design spec and the
-# implementation plan are committed deliverables, and the README links to them.
+# implementation plan are committed deliverables.
+
+.wrangler
+.dev.vars*

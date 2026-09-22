@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "askew",
+  "compatibility_date": "2026-09-22",
+
+  // Askew is a pure client-side app: no Worker script, no API, no bindings.
+  // Cloudflare serves the Vite build directly from its edge.
+  "assets": {
+    "directory": "./dist/",
+    // Without this, every path other than "/" returns 404 instead of the app.
+    "not_found_handling": "single-page-application",
+  },
+
+  "routes": [
+    {
+      "pattern": "askew.admice.com",
+      "custom_domain": true,
+    },
+  ],
+
+  "observability": {
+    "enabled": true,
+  },
+}

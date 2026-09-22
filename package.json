@@ -25,7 +25,9 @@
     "lint": "oxlint",
     "e2e": "playwright test",
     "format": "oxfmt",
-    "format:check": "oxfmt --check"
+    "format:check": "oxfmt --check",
+    "deploy": "npm run build && wrangler deploy",
+    "cf:dev": "wrangler dev"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
@@ -49,6 +51,7 @@
     "oxlint": "^1.83.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.0",
-    "vitest": "^5.0.1"
+    "vitest": "^5.0.1",
+    "wrangler": "^4.136.1"
   }
 }
